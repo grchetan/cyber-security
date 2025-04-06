@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Under Construction</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#4A90E2',secondary:'#F5F8FA'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5F8FA;
+        }
+        
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 3px solid rgba(74, 144, 226, 0.2);
+            border-radius: 50%;
+            border-top-color: #4A90E2;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-md text-center">
+            <div class="flex justify-center mb-8">
+                <div class="loader"></div>
+            </div>
+            
+            <h1 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-6 fade-in">Website Under Construction</h1>
+            
+            <div class="space-y-3 mb-10 fade-in" style="animation-delay: 0.2s">
+                <p class="text-gray-600">Our website is currently under construction.</p>
+                <p class="text-gray-600">Please check back again after some time.</p>
+                <p class="text-gray-600">Thank you for your patience!</p>
+            </div>
+            
+            <div class="text-sm text-gray-500 fade-in" style="animation-delay: 0.4s">
+                <p>Expected Launch: Coming Soon</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
